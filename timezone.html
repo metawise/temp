@@ -398,42 +398,46 @@
     <script type="text/javascript" src="./moment.js"></script>
     <script type="text/javascript" src="./moment-timezone.js"></script>
     <script type="text/javascript">
+
+
+        // var time = '2020 April 01 10:00:00 AM EDT';
+        // let zone = 'US/Eastern';
+        // var date = moment(time).tz(zone)
+
+        // console.log(moment.tz(date, "US/Eastern").format('YYYY-MM-DD HH:mm:ss A z'));
+        // console.log(moment.tz(date, "America/Los_Angeles").format('YYYY-MM-DD HH:mm:ss A z'));
+        // console.log(moment.tz(date, "Asia/Ulaanbaatar").format('YYYY-MM-DD HH:mm:ss A z'));
+        // console.log('CORRECT-->', moment.tz(date, "US/Hawaii").format('YYYY-MM-DD HH:mm:ss A z'));
+
+
         function timezone_changer(e) {
             console.clear()
 
-            // var time = '2020 April 01 10:00:00 AM EDT';
-            //             2020 April 01 10:00:00 AM CET
-            var time = '2020 April 01 10:00:00 AM CET';
-            console.log(time)
-            let zone = 'US/Eastern';
-            var date = moment(time).tz(zone)
-
-            console.log(moment.tz(date, "US/Eastern").format('YYYY-MM-DD HH:mm:ss A z'));
-            console.log(moment.tz(date, "America/Los_Angeles").format('YYYY-MM-DD HH:mm:ss A z'));
-            console.log(moment.tz(date, "Asia/Ulaanbaatar").format('YYYY-MM-DD HH:mm:ss A z'));
-            console.log('CORRECT-->', moment.tz(date, "US/Hawaii").format('YYYY-MM-DD HH:mm:ss A z'));
-
             let selected = document.querySelector('#timezone-list').value
-
             let names = moment.tz.names();
             let choosenTimeZone = names.filter(e => { return e.includes(selected) })
 
+            /*RESET*/
+            if (!sessionStorage.getItem('originalHTML')) {
+                var originalHTML = document.getElementById("dates")
+                sessionStorage.setItem('originalHTML', originalHTML.outerHTML)
+            }
+            if (!sessionStorage.getItem('originalTimeZone')) {
+                sessionStorage.setItem('originalTimeZone', originalTimeZone)
+            }
+            var originalTimeZone = sessionStorage.getItem('originalTimeZone');
+
+            var source = document.getElementById("dates")
+            source.innerHTML = sessionStorage.getItem('originalHTML');
+            /*RESET*/
+
             let timezoneCode = moment.tz.zone(choosenTimeZone[0])
                 ? moment.tz.zone(choosenTimeZone[0]).abbrs[0]
-                : 'EDT';
+                : originalTimeZone;
 
-            // if (moment.tz.zone(choosenTimeZone[0]) === null) {
-            //     console.log(moment.tz.zone(choosenTimeZone[0]))
-            //     return false;
-            // }
-
-            console.log('timezoneCode', choosenTimeZone, timezoneCode)
-
-            var c = document.getElementById("dates")
-            var dates = c.getElementsByTagName('b')
+            var dates = source.getElementsByTagName('b')
 
             for (item of dates) {
-                console.log(item)
                 let myTime = item.innerText;
                 let timeOnly = myTime.split(' ')
                 let timeZone = timezoneCode ? timezoneCode : timeOnly[1];
@@ -458,37 +462,23 @@
                     hour[0] = hour[0] + amORpm
                 }
                 var h2 = item.parentNode.parentNode.parentNode.parentNode.parentNode.querySelector('h2').innerText.slice(0, -2) + ' 2020'
-
                 h2 = h2.split(' ')
-                console.log(h2)
                 let day = h2[2].length === 2 ? h2[2] : `0${h2[2]}`;
                 h2 = h2[3] + ' ' + h2[1] + ' ' + day
                 let h = hour[0].replace(',', '');
                 h = h.toUpperCase();
-
-                let date = h2 + ' ' + h + ' ' + timeZone;
-
-                console.log('DATE::::', hour[0])
-                let zone = 'US/Eastern';
-                //Wednesday April 1 2020 10:00:00 am EDT
-                // var newDate = moment(date).tz(choosenTimeZone[0]).format('YYYY MMM DD hh:mm:ss A z').toString();
+                let date = h2 + ' ' + h + ' ' + timeOnly[1];
                 let html;
 
-                if (moment(date + timezoneCode).isValid()) {
+                if (moment(date).isValid()) {
                     html = moment(date).tz(choosenTimeZone[0]).format('HH:mma z');
                     item.innerText = html;
                 }
                 else {
-                    console.log('invalid', date)
+                    console.log('invalid date or timezone code', date)
                     return false;
                 }
-
-                // console.log(html)
-
             }
-
-
-
 
         }
 
