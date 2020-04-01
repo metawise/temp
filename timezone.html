@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timezone converter</title>
+</head>
+
+<body>
+    <div style="max-width: 800px; margin: 0 auto 50px; padding: 0 20px;">
+        <p><strong>Jews for Jesus invites you to celebrate Christ in the Passover in a special, one-hour, livestream
+                experience!</strong> Normally, we’d be sharing this presentation in churches around the world, but in
+            light
+            of the current global crisis, we are offering an exciting <strong>online</strong> alternative.</p>
+        <p style="padding-bottom: 0;"><img src="https://jewsforjesus.org/wp-content/uploads/CIP_Strip.jpg"
+                width="100%" />
+            <div style="clear: both; font-size: 14px; color: #555; text-align: center">Photos from past events. Please
+                practice social distancing this Passover.</div>
+        </p>
+        <p>Together, we will explore the link between the ancient Jewish feast of Passover and the last supper Jesus
+            shared
+            with His disciples. You’ll get to meet some of our Jewish staff from around the world, hear their
+            life-changing
+            stories, and even have a chance to ask your own questions through an interactive Q&amp;A!</p>
+        <h4 style="margin-top: 20px;">Register now to join us for a powerful Passover experience you'll
+            never&nbsp;forget.
+            <strong>All registrations are free.</strong></h4>
+        <h4 style="margin-top: 20px;font-weight: bold">Just click on an event time* below:</h4>
+
+
+        <p style="padding: 20px 10% 0;">
+
+            <strong>*Please note</strong> all time zones are listed in <strong>USA Eastern
+                Time
+                (EDT)</strong>, but the events will be available to you wherever you are! <a
+                href="https://www.thetimezoneconverter.com/" target="_blank">Click here to calculate</a> what time an
+            event
+            will take place in your time zone.
+
+            <hr>
+
+            <div class="timezone-offset-container">
+                <select name="user[time_zone]" id="timezone-list" onchange="javascript:timezone_changer(this)">
+                    <option value="American Samoa">(GMT-11:00) American Samoa</option>
+                    <option value="International Date Line West">(GMT-11:00) International Date Line West</option>
+                    <option value="Midway Island">(GMT-11:00) Midway Island</option>
+                    <option value="Hawaii">(GMT-10:00) Hawaii</option>
+                    <option value="Alaska">(GMT-09:00) Alaska</option>
+                    <option value="Pacific Time (US &amp; Canada)">(GMT-08:00) Pacific Time (US &amp; Canada)</option>
+                    <option value="Tijuana">(GMT-08:00) Tijuana</option>
+                    <option value="Arizona">(GMT-07:00) Arizona</option>
+                    <option value="Chihuahua">(GMT-07:00) Chihuahua</option>
+                    <option value="Mazatlan">(GMT-07:00) Mazatlan</option>
+                    <option value="Mountain Time (US &amp; Canada)">(GMT-07:00) Mountain Time (US &amp; Canada)</option>
+                    <option value="Central America">(GMT-06:00) Central America</option>
+                    <option value="Central Time (US &amp; Canada)">(GMT-06:00) Central Time (US &amp; Canada)</option>
+                    <option value="Guadalajara">(GMT-06:00) Guadalajara</option>
+                    <option value="Mexico City">(GMT-06:00) Mexico City</option>
+                    <option value="Monterrey">(GMT-06:00) Monterrey</option>
+                    <option value="Saskatchewan">(GMT-06:00) Saskatchewan</option>
+                    <option value="Bogota">(GMT-05:00) Bogota</option>
+                    <option value="Eastern Time (US &amp; Canada)">(GMT-05:00) Eastern Time (US &amp; Canada)</option>
+                    <option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
+                    <option value="Lima">(GMT-05:00) Lima</option>
+                    <option value="Quito">(GMT-05:00) Quito</option>
+                    <option value="Atlantic Time (Canada)">(GMT-04:00) Atlantic Time (Canada)</option>
+                    <option value="Caracas">(GMT-04:00) Caracas</option>
+                    <option value="Georgetown">(GMT-04:00) Georgetown</option>
+                    <option value="La Paz">(GMT-04:00) La Paz</option>
+                    <option value="Santiago">(GMT-04:00) Santiago</option>
+                    <option value="Newfoundland">(GMT-03:30) Newfoundland</option>
+                    <option value="Brasilia">(GMT-03:00) Brasilia</option>
+                    <option value="Buenos Aires">(GMT-03:00) Buenos Aires</option>
+                    <option value="Greenland">(GMT-03:00) Greenland</option>
+                    <option value="Montevideo">(GMT-03:00) Montevideo</option>
+                    <option value="Mid-Atlantic">(GMT-02:00) Mid-Atlantic</option>
+                    <option value="Azores">(GMT-01:00) Azores</option>
+                    <option value="Cape Verde Is.">(GMT-01:00) Cape Verde Is.</option>
+                    <option value="Edinburgh">(GMT+00:00) Edinburgh</option>
+                    <option value="Lisbon">(GMT+00:00) Lisbon</option>
+                    <option value="London">(GMT+00:00) London</option>
+                    <option value="Monrovia">(GMT+00:00) Monrovia</option>
+                    <option value="UTC">(GMT+00:00) UTC</option>
+                    <option value="Amsterdam">(GMT+01:00) Amsterdam</option>
+                    <option value="Belgrade">(GMT+01:00) Belgrade</option>
+                    <option value="Berlin">(GMT+01:00) Berlin</option>
+                    <option value="Bern">(GMT+01:00) Bern</option>
+                    <option value="Bratislava">(GMT+01:00) Bratislava</option>
+                    <option value="Brussels">(GMT+01:00) Brussels</option>
+                    <option value="Budapest">(GMT+01:00) Budapest</option>
+                    <option value="Casablanca">(GMT+01:00) Casablanca</option>
+                    <option value="Copenhagen">(GMT+01:00) Copenhagen</option>
+                    <option value="Dublin">(GMT+01:00) Dublin</option>
+                    <option value="Europe/Berlin">(GMT+01:00) Europe/Berlin</option>
+                    <option value="Ljubljana">(GMT+01:00) Ljubljana</option>
+                    <option selected="selected" value="Madrid">(GMT+01:00) Madrid</option>
+                    <option value="Paris">(GMT+01:00) Paris</option>
+                    <option value="Prague">(GMT+01:00) Prague</option>
+                    <option value="Rome">(GMT+01:00) Rome</option>
+                    <option value="Sarajevo">(GMT+01:00) Sarajevo</option>
+                    <option value="Skopje">(GMT+01:00) Skopje</option>
+                    <option value="Stockholm">(GMT+01:00) Stockholm</option>
+                    <option value="Vienna">(GMT+01:00) Vienna</option>
+                    <option value="Warsaw">(GMT+01:00) Warsaw</option>
+                    <option value="West Central Africa">(GMT+01:00) West Central Africa</option>
+                    <option value="Zagreb">(GMT+01:00) Zagreb</option>
+                    <option value="Zurich">(GMT+01:00) Zurich</option>
+                    <option value="Athens">(GMT+02:00) Athens</option>
+                    <option value="Bucharest">(GMT+02:00) Bucharest</option>
+                    <option value="Cairo">(GMT+02:00) Cairo</option>
+                    <option value="Harare">(GMT+02:00) Harare</option>
+                    <option value="Helsinki">(GMT+02:00) Helsinki</option>
+                    <option value="Jerusalem">(GMT+02:00) Jerusalem</option>
+                    <option value="Kaliningrad">(GMT+02:00) Kaliningrad</option>
+                    <option value="Kyiv">(GMT+02:00) Kyiv</option>
+                    <option value="Pretoria">(GMT+02:00) Pretoria</option>
+                    <option value="Riga">(GMT+02:00) Riga</option>
+                    <option value="Sofia">(GMT+02:00) Sofia</option>
+                    <option value="Tallinn">(GMT+02:00) Tallinn</option>
+                    <option value="Vilnius">(GMT+02:00) Vilnius</option>
+                    <option value="Baghdad">(GMT+03:00) Baghdad</option>
+                    <option value="Istanbul">(GMT+03:00) Istanbul</option>
+                    <option value="Kuwait">(GMT+03:00) Kuwait</option>
+                    <option value="Minsk">(GMT+03:00) Minsk</option>
+                    <option value="Moscow">(GMT+03:00) Moscow</option>
+                    <option value="Nairobi">(GMT+03:00) Nairobi</option>
+                    <option value="Riyadh">(GMT+03:00) Riyadh</option>
+                    <option value="St. Petersburg">(GMT+03:00) St. Petersburg</option>
+                    <option value="Tehran">(GMT+03:30) Tehran</option>
+                    <option value="Abu Dhabi">(GMT+04:00) Abu Dhabi</option>
+                    <option value="Baku">(GMT+04:00) Baku</option>
+                    <option value="Muscat">(GMT+04:00) Muscat</option>
+                    <option value="Samara">(GMT+04:00) Samara</option>
+                    <option value="Tbilisi">(GMT+04:00) Tbilisi</option>
+                    <option value="Volgograd">(GMT+04:00) Volgograd</option>
+                    <option value="Yerevan">(GMT+04:00) Yerevan</option>
+                    <option value="Kabul">(GMT+04:30) Kabul</option>
+                    <option value="Ekaterinburg">(GMT+05:00) Ekaterinburg</option>
+                    <option value="Islamabad">(GMT+05:00) Islamabad</option>
+                    <option value="Karachi">(GMT+05:00) Karachi</option>
+                    <option value="Tashkent">(GMT+05:00) Tashkent</option>
+                    <option value="Chennai">(GMT+05:30) Chennai</option>
+                    <option value="Kolkata">(GMT+05:30) Kolkata</option>
+                    <option value="Mumbai">(GMT+05:30) Mumbai</option>
+                    <option value="New Delhi">(GMT+05:30) New Delhi</option>
+                    <option value="Sri Jayawardenepura">(GMT+05:30) Sri Jayawardenepura</option>
+                    <option value="Kathmandu">(GMT+05:45) Kathmandu</option>
+                    <option value="Almaty">(GMT+06:00) Almaty</option>
+                    <option value="Astana">(GMT+06:00) Astana</option>
+                    <option value="Dhaka">(GMT+06:00) Dhaka</option>
+                    <option value="Urumqi">(GMT+06:00) Urumqi</option>
+                    <option value="Rangoon">(GMT+06:30) Rangoon</option>
+                    <option value="Bangkok">(GMT+07:00) Bangkok</option>
+                    <option value="Hanoi">(GMT+07:00) Hanoi</option>
+                    <option value="Jakarta">(GMT+07:00) Jakarta</option>
+                    <option value="Krasnoyarsk">(GMT+07:00) Krasnoyarsk</option>
+                    <option value="Novosibirsk">(GMT+07:00) Novosibirsk</option>
+                    <option value="Beijing">(GMT+08:00) Beijing</option>
+                    <option value="Chongqing">(GMT+08:00) Chongqing</option>
+                    <option value="Hong Kong">(GMT+08:00) Hong Kong</option>
+                    <option value="Irkutsk">(GMT+08:00) Irkutsk</option>
+                    <option value="Kuala Lumpur">(GMT+08:00) Kuala Lumpur</option>
+                    <option value="Perth">(GMT+08:00) Perth</option>
+                    <option value="Singapore">(GMT+08:00) Singapore</option>
+                    <option value="Taipei">(GMT+08:00) Taipei</option>
+                    <option value="Ulaanbaatar">(GMT+08:00) Ulaanbaatar</option>
+                    <option value="Osaka">(GMT+09:00) Osaka</option>
+                    <option value="Sapporo">(GMT+09:00) Sapporo</option>
+                    <option value="Seoul">(GMT+09:00) Seoul</option>
+                    <option value="Tokyo">(GMT+09:00) Tokyo</option>
+                    <option value="Yakutsk">(GMT+09:00) Yakutsk</option>
+                    <option value="Adelaide">(GMT+09:30) Adelaide</option>
+                    <option value="Darwin">(GMT+09:30) Darwin</option>
+                    <option value="Brisbane">(GMT+10:00) Brisbane</option>
+                    <option value="Canberra">(GMT+10:00) Canberra</option>
+                    <option value="Guam">(GMT+10:00) Guam</option>
+                    <option value="Hobart">(GMT+10:00) Hobart</option>
+                    <option value="Melbourne">(GMT+10:00) Melbourne</option>
+                    <option value="Port Moresby">(GMT+10:00) Port Moresby</option>
+                    <option value="Sydney">(GMT+10:00) Sydney</option>
+                    <option value="Vladivostok">(GMT+10:00) Vladivostok</option>
+                    <option value="Magadan">(GMT+11:00) Magadan</option>
+                    <option value="New Caledonia">(GMT+11:00) New Caledonia</option>
+                    <option value="Solomon Is.">(GMT+11:00) Solomon Is.</option>
+                    <option value="Srednekolymsk">(GMT+11:00) Srednekolymsk</option>
+                    <option value="Auckland">(GMT+12:00) Auckland</option>
+                    <option value="Fiji">(GMT+12:00) Fiji</option>
+                    <option value="Kamchatka">(GMT+12:00) Kamchatka</option>
+                    <option value="Marshall Is.">(GMT+12:00) Marshall Is.</option>
+                    <option value="Wellington">(GMT+12:00) Wellington</option>
+                    <option value="Chatham Is.">(GMT+12:45) Chatham Is.</option>
+                    <option value="Nuku'alofa">(GMT+13:00) Nuku'alofa</option>
+                    <option value="Samoa">(GMT+13:00) Samoa</option>
+                    <option value="Tokelau Is.">(GMT+13:00) Tokelau Is.</option>
+                </select>
+            </div>
+        </p>
+
+        <div id="dates">
+            <!--<div style="overflow: hidden">
+        <h2 class="date">Sunday March 29<sup>th</sup></h2>
+        <div class="flex-col-2">
+          <div class="flex-col-col">
+            <p><a href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-100998874352"><b>4am EDT (9am London)</b></a> with Julia Pascoe, Bob Mendelsohn, and Danielle Stavi</p>
+            <p><a href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-101020206156"><b>9am EDT</b></a><br />with Josh Turnil, Avi Snyder, Shoshana Birnbaum, and Boris Skvortsov</p> 
+            <p><a href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-101020222204"><b>11am EDT</b></a><br />with Chaim Birnbaum, Laura Barron, Alex Adelson, and Miri Borok</p> 
+            <p><a href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-101020240258"><b>2pm EDT</b></a><br />with Elizabeth Black, Yoel Ben David, Mayan Shoshani, and Aaron Lewin</p></div>
+          <div class="flex-col-col">
+            <p><a href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-101020254300"><b>4pm EDT</b></a><br />with Tuvya Zaretsky, Eryn Black, David Liebman, and Shoshannah Weinisch</p>
+            <p><a href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-101020258312"><b>6pm EDT</b></a><br />with Isaac Brickner, Stewart Weinisch, Giselle Le'Aupepe Bruce, and Karol Joseph</p> 
+            <p><a href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-101020262324"><b>9pm EDT</b></a><br />with Jeff Morgan, Josh Sofaer, Annette Sofaer, and Rich Robinson</p></div>
+        </div>
+    </div>-->
+            <div style="overflow: hidden">
+                <h2 class="date">Wednesday April 1<sup>st</sup></h2>
+                <div class="flex-col-2">
+                    <div class="flex-col-col">
+                        <p><a
+                                href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-101020276366"><b>10am
+                                    EDT</b></a><br />with Elizabeth Black, Yoel Ben David, Mayan Shoshani, and Aaron
+                            Lewin
+                        </p>
+                        <p><a
+                                href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-101020368642"><b>1pm
+                                    EDT</b></a><br />with Josh Turnil, Avi Snyder, Shoshana Birnbaum, and Boris
+                            Skvortsov
+                        </p>
+                        <p><a
+                                href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-101020372654"><b>3pm
+                                    EDT</b></a><br />with Julia Pascoe, Bob Mendelsohn, and Danielle Stavi</p>
+                    </div>
+                    <div class="flex-col-col">
+                        <p><a
+                                href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-101020392714"><b>7pm
+                                    EDT</b></a><br />with Tuvya Zaretsky, Eryn Black, David Liebman, and Shoshannah
+                            Weinisch
+                        </p>
+                        <p><a
+                                href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-101020406756"><b>8:30pm
+                                    EDT</b></a><br />with Isaac Brickner, Stewart Weinisch, Giselle Le'Aupepe Bruce, and
+                            Karol
+                            Joseph</p>
+                        <p><a
+                                href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-101020418792"><b>10pm
+                                    EDT</b></a><br />with Jeff Morgan, Josh Sofaer, Annette Sofaer, and Rich Robinson
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div style="overflow: hidden">
+                <h2 class="date">Thursday April 2<sup>nd</sup></h2>
+                <div class="flex-col-2">
+                    <div class="flex-col-col">
+                        <p><a
+                                href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-101020531128"><b>2pm
+                                    EDT</b></a><br />with Chaim Birnbaum, Laura Barron, Alex Adelson, and Miri Borok</p>
+                        <p><a
+                                href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-101020539152"><b>8:00pm
+                                    EDT</b></a><br />with Isaac Brickner, Stewart Weinisch, Giselle Le'Aupepe Bruce, and
+                            Karol
+                            Joseph</p>
+                    </div>
+                    <div class="flex-col-col">
+                        <p><a
+                                href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-101020557206"><b>10pm
+                                    EDT</b></a><br />with Jeff Morgan, Josh Sofaer, Annette Sofaer, and Rich Robinson
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div style="overflow: hidden">
+                <h2 class="date">Sunday April 5<sup>th</sup></h2>
+                <div class="flex-col-2">
+                    <div class="flex-col-col">
+                        <p><a
+                                href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-101020571248"><b>5am
+                                    EDT</b></a><br />with Julia Pascoe, Bob Mendelsohn, and Danielle Stavi</p>
+                        <p><a
+                                href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-101020573254"><b>9am
+                                    EDT</b></a><br />with Josh Turnil, Avi Snyder, Shoshana Birnbaum, and Boris
+                            Skvortsov
+                        </p>
+                        <p><a
+                                href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-101020575260"><b>11am
+                                    EDT</b></a><br />with Chaim Birnbaum, Laura Barron, Alex Adelson, and Miri Borok</p>
+                        <p><a
+                                href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-101020595320"><b>2pm
+                                    EDT</b></a><br />with Elizabeth Black, Yoel Ben David, Mayan Shoshani, and Aaron
+                            Lewin
+                        </p>
+                    </div>
+                    <div class="flex-col-col">
+                        <p><a
+                                href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-101020597326"><b>4pm
+                                    EDT</b></a><br />with Tuvya Zaretsky, Eryn Black, David Liebman, and Shoshannah
+                            Weinisch
+                        </p>
+                        <p><a
+                                href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-101020603344"><b>6pm
+                                    EDT</b></a><br />with Isaac Brickner, Stewart Weinisch, Giselle Le'Aupepe Bruce, and
+                            Karol
+                            Joseph</p>
+                        <p><a
+                                href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-101020605350"><b>9pm
+                                    EDT</b></a><br />with Jeff Morgan, Josh Sofaer, Annette Sofaer, and Rich Robinson
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div style="overflow: hidden">
+                <h2 class="date">Tuesday April 7<sup>th</sup></h2>
+                <div class="flex-col-2">
+                    <div class="flex-col-col">
+                        <p><a
+                                href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-101020613374"><b>11am
+                                    EDT</b></a><br />with Elizabeth Black,Yoel Ben David, Mayan Shoshani, and Aaron
+                            Lewin
+                        </p>
+                        <p><a
+                                href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-101020629422"><b>1pm
+                                    EDT</b></a><br />with Josh Turnil, Avi Snyder, Shoshana Birnbaum, and Boris
+                            Skvortsov
+                        </p>
+                    </div>
+                    <div class="flex-col-col">
+                        <p><a
+                                href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-101020637446"><b>7pm
+                                    EDT</b></a><br />with Tuvya Zaretsky, Eryn Black, David Liebman, and Shoshannah
+                            Weinisch
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div style="overflow: hidden">
+                <h2 class="date">Thursday April 9<sup>th</sup></h2>
+                <div class="flex-col-2">
+                    <div class="flex-col-col">
+                        <p><a
+                                href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-101020707656"><b>2pm
+                                    EDT</b></a><br />with Chaim Birnbaum, Laura Barron, Alex Adelson, and Miri Borok</p>
+                        <p><a
+                                href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-101020701638"><b>8:00pm
+                                    EDT</b></a><br />with Isaac Brickner, Stewart Weinisch, Giselle Le'Aupepe Bruce, and
+                            Karol
+                            Joseph</p>
+                    </div>
+                    <div class="flex-col-col">
+                        <p><a
+                                href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-101020639452"><b>10pm
+                                    EDT</b></a><br />with Jeff Morgan, Josh Sofaer, Annette Sofaer, and Rich Robinson
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div style="overflow: hidden">
+                <h2 class="date">Friday April 10<sup>th</sup></h2>
+                <div class="flex-col-2">
+                    <div class="flex-col-col">
+                        <p><a
+                                href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-101020711668"><b>10am
+                                    EDT</b></a><br />with Chaim Birnbaum, Laura Barron, Alex Adelson, and Miri Borok</p>
+                        <p><a
+                                href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-101020715680"><b>12pm
+                                    EDT</b></a><br />with Elizabeth Black, Yoel Ben David, Mayan Shoshani, and Aaron
+                            Lewin
+                        </p>
+                        <p><a
+                                href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-101020719692"><b>2pm
+                                    EDT</b></a><br />with Josh Turnil, Avi Snyder, Shoshana Birnbaum, and Boris
+                            Skvortsov
+                        </p>
+                        <p><a
+                                href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-101020723704"><b>4pm
+                                    EDT</b></a><br />with Julia Pascoe, Bob Mendelsohn, and Danielle Stavi</p>
+                    </div>
+                    <div class="flex-col-col">
+                        <p><a
+                                href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-101020757806"><b>7pm
+                                    EDT</b></a><br />with Tuvya Zaretsky, Eryn Black, David Liebman, and Shoshannah
+                            Weinisch
+                        </p>
+                        <p><a
+                                href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-101020763824"><b>8:30pm
+                                    EDT</b></a><br />with Isaac Brickner, Stewart Weinisch, Giselle Le'Aupepe Bruce, and
+                            Karol
+                            Joseph</p>
+                        <p><a
+                                href="https://www.eventbrite.com/e/christ-in-the-passover-livestream-experience-tickets-101020801938"><b>10pm
+                                    EDT</b></a><br />with Jeff Morgan, Josh Sofaer, Annette Sofaer, and Rich Robinson
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./moment.js"></script>
+    <script type="text/javascript" src="./moment-timezone.js"></script>
+    <script type="text/javascript">
+        function timezone_changer(e) {
+            console.clear()
+
+            // var time = '2020 April 01 10:00:00 AM EDT';
+            //             2020 April 01 10:00:00 AM CET
+            var time = '2020 April 01 10:00:00 AM CET';
+            console.log(time)
+            let zone = 'US/Eastern';
+            var date = moment(time).tz(zone)
+
+            console.log(moment.tz(date, "US/Eastern").format('YYYY-MM-DD HH:mm:ss A z'));
+            console.log(moment.tz(date, "America/Los_Angeles").format('YYYY-MM-DD HH:mm:ss A z'));
+            console.log(moment.tz(date, "Asia/Ulaanbaatar").format('YYYY-MM-DD HH:mm:ss A z'));
+            console.log('CORRECT-->', moment.tz(date, "US/Hawaii").format('YYYY-MM-DD HH:mm:ss A z'));
+
+            let selected = document.querySelector('#timezone-list').value
+
+            let names = moment.tz.names();
+            let choosenTimeZone = names.filter(e => { return e.includes(selected) })
+
+            let timezoneCode = moment.tz.zone(choosenTimeZone[0])
+                ? moment.tz.zone(choosenTimeZone[0]).abbrs[0]
+                : 'EDT';
+
+            // if (moment.tz.zone(choosenTimeZone[0]) === null) {
+            //     console.log(moment.tz.zone(choosenTimeZone[0]))
+            //     return false;
+            // }
+
+            console.log('timezoneCode', choosenTimeZone, timezoneCode)
+
+            var c = document.getElementById("dates")
+            var dates = c.getElementsByTagName('b')
+
+            for (item of dates) {
+                console.log(item)
+                let myTime = item.innerText;
+                let timeOnly = myTime.split(' ')
+                let timeZone = timezoneCode ? timezoneCode : timeOnly[1];
+                let hour, amORpm = 'am';
+
+                if (timeOnly[0].includes('pm')) {
+                    amORpm = 'pm';
+                } else if (timeOnly[0].includes('am')) {
+                    amORpm = 'am';
+                }
+                hour = timeOnly[0].split(amORpm);
+
+                if (hour[0].length < 7) {
+                    // initial fix hours
+                    if (hour[0].length < 4) {
+                        hour[0] = hour[0] + ':00:00 ' + amORpm
+                    }
+                    else {
+                        hour[0] = hour[0] + ':00 ' + amORpm
+                    }
+                } else {
+                    hour[0] = hour[0] + amORpm
+                }
+                var h2 = item.parentNode.parentNode.parentNode.parentNode.parentNode.querySelector('h2').innerText.slice(0, -2) + ' 2020'
+
+                h2 = h2.split(' ')
+                console.log(h2)
+                let day = h2[2].length === 2 ? h2[2] : `0${h2[2]}`;
+                h2 = h2[3] + ' ' + h2[1] + ' ' + day
+                let h = hour[0].replace(',', '');
+                h = h.toUpperCase();
+
+                let date = h2 + ' ' + h + ' ' + timeZone;
+
+                console.log('DATE::::', hour[0])
+                let zone = 'US/Eastern';
+                //Wednesday April 1 2020 10:00:00 am EDT
+                // var newDate = moment(date).tz(choosenTimeZone[0]).format('YYYY MMM DD hh:mm:ss A z').toString();
+                let html;
+
+                if (moment(date + timezoneCode).isValid()) {
+                    html = moment(date).tz(choosenTimeZone[0]).format('HH:mma z');
+                    item.innerText = html;
+                }
+                else {
+                    console.log('invalid', date)
+                    return false;
+                }
+
+                // console.log(html)
+
+            }
+
+
+
+
+        }
+
+    </script>
+
+</body>
+
+</html>
