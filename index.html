@@ -333,24 +333,12 @@
     <script type="text/javascript" src="./moment.js"></script>
     <script type="text/javascript" src="./moment-timezone.js"></script>
     <script type="text/javascript">
-
-        // var time = '2020 April 01 10:00:00 AM EDT';
-        // let zone = 'US/Eastern';
-        // var date = moment(time).tz(zone)
-
-        // console.log(moment.tz(date, "US/Eastern").format('YYYY-MM-DD HH:mm:ss A z'));
-        // console.log(moment.tz(date, "America/Los_Angeles").format('YYYY-MM-DD HH:mm:ss A z'));
-        // console.log(moment.tz(date, "Asia/Ulaanbaatar").format('YYYY-MM-DD HH:mm:ss A z'));
-        // console.log('CORRECT-->', moment.tz(date, "US/Hawaii").format('YYYY-MM-DD HH:mm:ss A z'));
-
-
         function timezone_changer(e) {
             // console.clear()
-
+            moment.tz.setDefault("US/Eastern");
             let selected = document.querySelector('#timezone-list').value
             let names = moment.tz.names();
             let choosenTimeZone = names.filter(e => { return e.includes(selected) })
-            console.log(selected.value)
 
             /*RESET*/
             if (!sessionStorage.getItem('originalHTML')) {
@@ -361,7 +349,6 @@
                 sessionStorage.setItem('originalTimeZone', originalTimeZone)
             }
             var originalTimeZone = sessionStorage.getItem('originalTimeZone');
-
             var source = document.getElementById("dates")
             source.innerHTML = sessionStorage.getItem('originalHTML');
             /*RESET*/
@@ -404,9 +391,8 @@
                 h = h.toUpperCase();
                 let date = h2 + ' ' + h + ' ' + timeOnly[1];
                 let html;
-
-                if (moment(date).isValid()) {
-                    html = moment(date).tz(choosenTimeZone[0]).format('HH:mma z');
+                if (moment(date, 'YYYY MMM DD hh:mm:ss A z').isValid()) {
+                    html = moment(date, 'YYYY MMM DD hh:mm:ss A z').tz(choosenTimeZone[0]).format('hh:mma z');
                     item.innerText = html;
                 }
                 else {
